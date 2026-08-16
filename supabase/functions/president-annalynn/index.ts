@@ -66,7 +66,7 @@ async function rpc(name: string, body: Record<string, unknown>): Promise<unknown
   return await result.json();
 }
 function requestIp(request: Request): string {
-  return request.headers.get("cf-connecting-ip")?.trim() || request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  return request.headers.get("cf-connecting-ip")?.trim() || "unknown";
 }
 async function handleChallenge(request: Request, origin: string): Promise<Response> {
   const challenge = await createChallenge(captchaSecret);

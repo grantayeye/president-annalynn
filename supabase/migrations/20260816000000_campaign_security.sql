@@ -34,7 +34,7 @@ begin
   values (p_site, p_ip_hash, current_date, 1, now())
   on conflict (site, ip_hash, bucket_date) do update
     set challenge_count = public.campaign_rate_limits.challenge_count + 1, updated_at = now()
-    where public.campaign_rate_limits.challenge_count < 30
+    where public.campaign_rate_limits.challenge_count < 300
   returning challenge_count into current_count;
   if current_count is null then return 'rate_limited'; end if;
   insert into public.campaign_captcha_nonces (site, nonce, expires_at) values (p_site, p_nonce, p_expires_at) on conflict do nothing;
@@ -56,7 +56,7 @@ begin
   values (p_site, p_ip_hash, current_date, 1, now())
   on conflict (site, ip_hash, bucket_date) do update
     set submission_count = public.campaign_rate_limits.submission_count + 1, updated_at = now()
-    where public.campaign_rate_limits.submission_count < 5
+    where public.campaign_rate_limits.submission_count < 75
   returning submission_count into current_count;
   if current_count is null then return 'rate_limited'; end if;
   return 'accepted';

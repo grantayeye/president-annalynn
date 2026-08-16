@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Annalynn for President campaign monogram</title>
+  <desc id="desc">A cream letter A with a coral check mark on a plum campaign badge.</desc>
+  <rect x="5" y="5" width="118" height="118" rx="30" fill="#4d263e"/>
+  <path fill="#fff8ed" d="M62.7 27h9.5l28 73H87L80.8 82H52.2L46 100H33zm-6.8 44h21.2L66.6 40.4z"/>
+  <path fill="none" stroke="#ef705d" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" d="m26 75 14 14 28-34"/>
+  <circle cx="105" cy="24" r="9" fill="#d9ad55"/>
+</svg>
+

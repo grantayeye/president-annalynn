@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Share an idea for Annalynn to consider as ninth-grade president.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://agucgfzlvutxobcnraxc.supabase.co; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <title>Annalynn for President | Ideas Into Action</title>
+  <link rel="icon" href="assets/campaign-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#idea-form">Skip to the idea form</a>
+  <header class="hero" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="Annalynn for President home">
+        <img src="assets/campaign-mark.svg" alt="" width="54" height="54">
+        <span>Annalynn for President</span>
+      </a>
+      <a class="nav-link" href="#idea-form">Share your idea</a>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">Ninth-grade student council</p>
+        <h1>Your ideas can shape our year.</h1>
+        <p class="hero-lede">Annalynn wants to lead by listening, bringing students together, and turning thoughtful ideas into action.</p>
+        <a class="primary-button" href="#idea-form">Share what matters to you <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-graphic" aria-hidden="true">
+        <div class="a-card"><span>A</span></div>
+        <div class="message-card message-one">I have an idea.</div>
+        <div class="message-card message-two">Let's make it happen.</div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="statement" aria-labelledby="statement-heading">
+      <p class="section-kicker">Leadership starts by listening.</p>
+      <h2 id="statement-heading">Annalynn wants ninth grade to be a place where students feel heard, connected, and proud of the year we create together.</h2>
+      <div class="principles">
+        <article><strong>Listen well</strong><p>Annalynn will pay attention to what students say and look for the ideas that can help our whole grade.</p></article>
+        <article><strong>Bring people together</strong><p>She wants more moments that build school spirit, strengthen friendships, and include everyone.</p></article>
+        <article><strong>Follow through</strong><p>She will communicate clearly, bring practical ideas forward, and report back on what can happen.</p></article>
+      </div>
+    </section>
+
+    <section class="idea-section" aria-labelledby="form-heading">
+      <div class="form-intro">
+        <p class="section-kicker">The suggestion box is open.</p>
+        <h2 id="form-heading">What would make ninth grade better?</h2>
+        <p>Your idea can be about events, service, school spirit, student life, or another opportunity you would like Annalynn to consider.</p>
+        <blockquote>“I want to hear the ideas that students are already talking about.”</blockquote>
+      </div>
+
+      <form id="idea-form" class="idea-form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label for="email">Your email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="idea">Your idea <span aria-hidden="true">*</span></label>
+          <textarea id="idea" name="idea" rows="6" minlength="10" maxlength="1500" required aria-describedby="idea-help idea-count"></textarea>
+          <div class="field-help"><span id="idea-help">Please include enough detail for Annalynn to understand your idea.</span><span id="idea-count">0 / 1500</span></div>
+        </div>
+
+        <div class="honeypot" aria-hidden="true">
+          <label for="website">Please leave this field empty</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <fieldset class="captcha-box">
+          <legend>Please show that you are a person.</legend>
+          <label id="captcha-question" for="captcha-answer">Loading the math question…</label>
+          <input id="captcha-answer" name="captchaAnswer" type="text" inputmode="numeric" pattern="[0-9]{1,3}" maxlength="3" autocomplete="off" required disabled>
+        </fieldset>
+
+        <div class="consent">
+          <input id="privacy-consent" name="privacyConsent" type="checkbox" required>
+          <label for="privacy-consent">I understand that my name, email, and idea will be emailed to Annalynn so she can consider my response. The campaign site does not save my submission.</label>
+        </div>
+
+        <button id="submit-button" class="submit-button" type="submit">Send my idea</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+        <p class="privacy-note">Please share campaign ideas only. Do not include private or sensitive information.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-mark"><img src="assets/campaign-mark.svg" alt="" width="42" height="42"><strong>Annalynn for President</strong></div>
+    <p>This is a student campaign website. It is not an official First Baptist Academy website.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

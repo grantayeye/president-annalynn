@@ -82,7 +82,7 @@ form.addEventListener("submit", async (event) => {
     if (!response.ok || data.ok !== true) throw new Error(data.code || "SUBMIT_FAILED");
     form.reset();
     ideaCount.textContent = "0 / 1500";
-    setStatus("Thank you! Annalynn received your idea and will give it thoughtful consideration.", "success");
+    setStatus("Thanks! Your idea was sent to Annalynn.", "success");
   } catch (error) {
     const message = error.message === "RATE_LIMITED"
       ? "This form has received several responses from your connection today. Please try again tomorrow."

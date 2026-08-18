@@ -5,3 +5,4 @@
 .supabase/
 supabase/.temp/
 node_modules/
+.render-annalynn-intro/

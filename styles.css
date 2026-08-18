@@ -31,6 +31,8 @@ button, input, textarea { font: inherit; }
 .eyebrow, .section-kicker { margin: 0 0 16px; color: var(--coral); font-size: .77rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
 h1, h2, p { margin-top: 0; }
 h1 { max-width: 720px; margin-bottom: 25px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.6rem, 7.8vw, 7rem); font-weight: 500; line-height: .92; letter-spacing: -.06em; }
+.campaign-slogan span { display: block; }
+.campaign-slogan span:last-child { color: var(--coral); }
 .hero-lede { max-width: 610px; color: #ded6d7; font-size: clamp(1.06rem, 2vw, 1.25rem); }
 .primary-button { display: inline-flex; align-items: center; gap: 14px; margin-top: 18px; padding: 14px 20px; border-bottom: 3px solid var(--coral); color: var(--cream); font-weight: 850; text-decoration: none; }
 .primary-button span { color: var(--coral); font-size: 1.25rem; }
@@ -115,4 +117,3 @@ footer p { max-width: 520px; margin: 0; color: var(--muted); font-size: .82rem; 
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
-
